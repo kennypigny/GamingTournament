@@ -1,0 +1,255 @@
+/* CSS DU FOOTER ET DE LA NAVBAR DANS UN FICHIER A PART */
+
+/* GENERAL */
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  color: #f2f2f2;
+}
+body {
+  background-color: #151b27;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  width: 90%;
+  padding: 110px 0 40px;
+  font-weight: 400;
+  font-size: 21px;
+  margin: 0 auto;
+}
+main {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+h2,
+h3 {
+  font-size: 1.5rem;
+}
+footer {
+  align-self: flex-end;
+  margin-top: 50px;
+}
+/* form 100% sinon quand  display:none sur les box casse la mise en page du formulaire*/
+form {
+  width: 100%;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+/* classe appelé dans JS */
+.hide-info {
+  display: none;
+}
+/* CONTAINER DES PARAMETRES DE LA CREATION DE TOURNOIS réutilisable pour les autres container*/
+.responsiv-param {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-parameter-form {
+  width: 90%;
+  height: auto;
+  margin-bottom: 20px;
+  background-color: #232f65;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  border: 1px solid black;
+  box-shadow: 0 0 15px rgb(0, 0, 0, 55%);
+}
+
+.title-container {
+  width: 100%;
+  height: 40px;
+  background-color: #28303f;
+  font-size: 18px;
+  font-weight: 500;
+  padding-left: 10px;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-container img {
+  padding-right: 10px;
+}
+.general {
+  width: 90%;
+  height: auto;
+  padding: 20px 0;
+}
+
+/* FIN DU CONTAINER DES PARAMETRE DE LA CREATION DE TOURNOIS */
+
+/* ELEMENT DU CONTAINER INFORMATION GENERAL */
+
+input {
+  width: 100%;
+  height: 30px;
+  margin: 5px 0 15px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.add-banner img {
+  width: 45%;
+}
+textarea {
+  width: 100%;
+  height: 120px;
+  color: black;
+  font-size: 1rem;
+  font-weight: 450;
+  margin-top: 10px;
+}
+
+/* ELEMENT DU CONTAINER INFORMATION DU JEU */
+
+select {
+  color: black;
+  width: 100%;
+  height: 30px;
+  margin: 5px 0 15px;
+}
+
+option {
+  color: black;
+}
+.size-player {
+  display: flex;
+}
+.size-player label:nth-child(2) {
+  text-align: center;
+  margin-left: 15px;
+}
+.size-player label:nth-child(3) {
+  text-align: center;
+  margin-left: 15px;
+}
+.size-player label:nth-child(2) input {
+  width: 25px;
+}
+.size-player label:nth-child(3) input {
+  width: 25px;
+}
+
+/* ELEMENT DU CONTAINER STRUCTURE DU TOURNOI */
+p {
+  margin-bottom: 10px;
+}
+#public {
+  width: 25px;
+  margin: 0 15px 0 0;
+}
+#private {
+  width: 25px;
+  margin: 0 15px 0 15px;
+}
+
+.container-radio {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+#auto-sub-on {
+  width: 25px;
+  margin: 0 15px 0 0;
+}
+#auto-sub-off {
+  width: 25px;
+  margin: 0 15px 0 35px;
+}
+.container-cta {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cta {
+  font-size: 1.2rem;
+  width: 250px;
+  height: 50px;
+  margin: 30px 0 100px;
+  border-radius: 25px;
+  color: rgb(158, 219, 52);
+  background-color: #001c61;
+  box-shadow: 0 0 20px rgb(158, 219, 52);
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+}
+
+.cta:active {
+  transform: translateY(1px);
+  box-shadow: 0 0 10px 2px rgb(158, 219, 52);
+}
+
+@media (max-width: 767px) {
+  .container-parameter-form {
+    max-width: 400px;
+  }
+}
+@media (min-width: 768px) {
+  h1 {
+    width: 85%;
+    margin-left: 25%;
+    padding: 50px 0px;
+  }
+  .dropdown {
+    display: none;
+  }
+  form {
+    width: 85%;
+  }
+
+  .container-parameter-form {
+    width: 45%;
+    margin-left: 15px;
+  }
+  .container-parameter-form-structure {
+    width: 91% !important;
+  }
+  .responsiv-structure-info {
+    width: 45%;
+  }
+  #structure-tournament {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+@media (min-width: 1024px) {
+  .container-parameter-form {
+    width: 45%;
+    margin-left: 15px;
+  }
+}
+
+@media (min-width: 1595px) {
+  form {
+    max-width: 2000px;
+  }
+}
+
+/* 
+@media (min-width: 768px) {
+}
+@media (min-width: 1024px)  {
+}
+@media (min-width: 1300px)  {
+}
+@media (min-width: 1595px) {
+} */
