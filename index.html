@@ -116,7 +116,8 @@
     <main>
       <!-- SELECT BOX -->
       <div class="container-selectbox">
-        <label for="games-select">
+        <form action="" method="">
+        <label for="games-select" aria-label="Choisir un jeu">
           <select name="games" id="games-select">
             <option value="" selected>--Choisissez un jeu--</option>
             <option value="lol">League of legend</option>
@@ -126,8 +127,8 @@
             <option value="hearthstone">Hearthstone</option>
           </select>
         </label>
-        <label for="region-select">
-          <select name="region" id="region-select">
+        <label for="region-select" aria-label="choisir une région">
+          <select name="region-select" id="region-select">
             <option value="" selected>--Choisissez une region--</option>
             <option value="europe">Europe</option>
             <option value="asie">Asie</option>
@@ -135,7 +136,7 @@
             <option value="amsouth">Amérique du sud</option>
           </select>
         </label>
-        <label for="plateform-select">
+        <label for="plateform-select" aria-label="Choisir une plateform">
           <select name="palteform" id="plateform-select">
             <option value="" selected>--Choisissez une plateforme--</option>
             <option value="ps5">PS5</option>
@@ -145,6 +146,7 @@
             <option value="xbox">Xbox série X/S</option>
           </select>
         </label>
+      </form>
       </div>
       <!-- CONTAINER DES TOURNOIS LES + POPULAIRE qui pourront être filtré grace a la select box -->
       <div class="main-container-tournament">

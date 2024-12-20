@@ -202,21 +202,23 @@ header {
   justify-content: center;
 }
 .cta {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
   width: 250px;
   height: 50px;
+  font-size: 1.2rem;
   border-radius: 25px;
   color: rgb(158, 219, 52);
   background-color: #001c61;
   box-shadow: 0 0 20px 2px rgb(158, 219, 52);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: all 0.3s ease;
   border: none;
 }
 .cta a {
+  width: 100%;
+  height: 100%;
   text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .cta:active {
@@ -228,12 +230,23 @@ header {
 .container-selectbox {
   width: 100%;
   height: auto;
+  /* display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end; */
+}
+form{
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
+  
 }
-label{
+label {
   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  
 }
 select {
   width: 100%;
@@ -242,9 +255,8 @@ select {
   text-align: center;
   cursor: pointer;
 }
-select:hover{
-  box-shadow : inset 0 0 55px  rgba(118, 118, 118, 0.2);
-  
+select:hover {
+  box-shadow: inset 0 0 55px rgba(118, 118, 118, 0.2);
 }
 option {
   cursor: pointer;
@@ -274,17 +286,25 @@ option:hover {
   margin: 40px 0;
 }
 /* CARD TOURNAMENT */
+
 .card-tournament {
+  display: flex;
+  flex-wrap: wrap;
   width: 325px;
   height: 425px;
   max-width: 100%;
   margin: 2rem 0.5rem;
   background-color: #232f65;
-  display: flex;
-  flex-wrap: wrap;
   align-content: flex-start;
   border-radius: 10px;
   box-shadow: 0 5px 25px 2px rgb(0, 0, 0, 85%);
+}
+.card-tournament:hover{
+  cursor: pointer;
+  box-shadow: 0 0 20px 1px rgb(158, 219, 52, 0.1);
+  transition: all 0.3s ease;
+  transform: translateY(2px);
+  
 }
 .banner-card-tournament {
   width: 100%;
@@ -348,7 +368,6 @@ footer {
   padding-top: 15px;
   display: flex;
   justify-content: flex-end;
-  
 }
 footer h3 {
   font-size: 21px;
@@ -359,7 +378,6 @@ footer h3 {
 }
 .contact {
   height: 80%;
-
 }
 .divider-footer {
   width: 50%;
@@ -487,16 +505,15 @@ footer a {
   }
 }
 
-@media (min-width: 1024px)  {
+@media (min-width: 1024px) {
   .container-header h2 {
     font-size: 22px;
   }
   .navbar-side ul li a {
     font-size: 1rem;
   }
-  
 }
-@media (min-width: 1300px)  {
+@media (min-width: 1300px) {
   .container-header h2 {
     font-size: 1.5rem;
   }
@@ -518,7 +535,6 @@ footer a {
     font-size: 2.5rem;
     line-height: 4rem;
   }
-
 }
 
 @media (min-width: 1595px) {
@@ -537,7 +553,6 @@ footer a {
     width: 400px;
     height: 60px;
     font-size: 1.5rem;
-    
   }
   .navbar-side {
     width: 15%;
@@ -555,11 +570,10 @@ footer a {
     height: 60px;
     font-size: 1.3rem;
   }
-  label{
+  label {
     width: 28.3%;
-
   }
-  .container-tournament-mostPopular{
+  .container-tournament-mostPopular {
     width: 85%;
   }
   .container-tournament-mostPopular h3 {
