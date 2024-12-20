@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil</title>
     <!-- font ROBOTO CONDENSED -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,91 +14,248 @@
     <!----------------------------------- -->
     <link rel="stylesheet" href="./assets/css/navbar.css" />
     <link rel="stylesheet" href="./assets/css/footer.css" />
-    <link rel="stylesheet" href="./assets/css/profilPrivate.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./assets/css/profilPrivate.css" />
+  </head>
+  <body>
     <header>
-        <!-- NAVBAR TOP mobile qui sera display: none avec @media -->
-                      <!-- menu hamb fait maison -->
-        <nav class="nav-top">
-          <div class="icon-hamb">
-            <div class="container-icon btn-1">
-              <div class="lign"></div>
-              <div class="lign"></div>
-              <div class="lign"></div>
-            </div>
+      <!-- NAVBAR TOP mobile qui sera display: none avec @media -->
+      <!-- menu hamb fait maison -->
+      <nav class="nav-top">
+        <div class="icon-hamb">
+          <div class="container-icon btn-1">
+            <div class="lign"></div>
+            <div class="lign"></div>
+            <div class="lign"></div>
           </div>
-  
-          <img
-            class="logo-nav"
-            src="./assets/img/Mobile/gamingTournamentLogo.webp"
-            alt="Logo Gaming Tournament"
-          />
-        </nav>
-  
-        <!-- SIDE NAVBAR mobile qui sera adapté au desktop avec les @media -->
-  
-        <nav class="navbar-side">
-          <ul>
-            <li class="logo-side-navbar" alt="Logo gaming tournament"></li>
-            <li>
-              <img src="./assets/img/General/home.png" alt="Icone accueil" />
-              <a href="./index.html">Accueil</a>
-            </li>
-            <li>
-              <img
-                src="./assets/img/General/calendar.png"
-                alt="Icone mes tournois"
-              />
-              <a href="">Mes tournois</a>
-            </li>
-            <li>
-              <img
-                src="./assets/img/General/crown.png"
-                alt="Icone creation de tournoi"
-              />
-              <a href="./assets/css/createTournament.css">Créer tournois</a>
-            </li>
-            <li>
-              <img
-                src="./assets/img/General/play-button.png"
-                alt="Icone accueil"
-              />
-              <a href="">Jouer</a>
-            </li>
-            <li class="divider-nav"></li>
-            <li>
-              <img src="./assets/img/General/feedback.png" alt="Icone feedback" />
-              <a href="">Feedback</a>
-            </li>
-          </ul>
-          <ul>
-            <li class="divider-nav"></li>
-            <li class="block">
-              <img src="./assets/img/General/user.png" alt="Icone connection" />
-              <a href="./formLogin.html">Connection</a>
-            </li>
-            <li>
-              <img
-                src="./assets/img/General/add-user.png"
-                alt="Icone inscription"
-              />
-              <a href="./SignUp.html">Inscription</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
-      <main>
+        </div>
+
+        <img
+          class="logo-nav"
+          src="./assets/img/Mobile/gamingTournamentLogo.webp"
+          alt="Logo Gaming Tournament"
+        />
+      </nav>
+
+      <!-- SIDE NAVBAR mobile qui sera adapté au desktop avec les @media -->
+
+      <nav class="navbar-side">
+        <ul>
+          <li class="logo-side-navbar" alt="Logo gaming tournament"></li>
+          <li>
+            <img src="./assets/img/General/home.png" alt="Icone accueil" />
+            <a href="./index.html">Accueil</a>
+          </li>
+          <li>
+            <img
+              src="./assets/img/General/calendar.png"
+              alt="Icone mes tournois"
+            />
+            <a href="">Mes tournois</a>
+          </li>
+          <li>
+            <img
+              src="./assets/img/General/crown.png"
+              alt="Icone creation de tournoi"
+            />
+            <a href="./assets/css/createTournament.css">Créer tournois</a>
+          </li>
+          <li>
+            <img
+              src="./assets/img/General/play-button.png"
+              alt="Icone accueil"
+            />
+            <a href="">Jouer</a>
+          </li>
+          <li class="divider-nav"></li>
+          <li>
+            <img src="./assets/img/General/feedback.png" alt="Icone feedback" />
+            <a href="">Feedback</a>
+          </li>
+        </ul>
+        <ul>
+          <li class="divider-nav"></li>
+          <li class="block">
+            <img src="./assets/img/General/user.png" alt="Icone connection" />
+            <a href="./formLogin.html">Connection</a>
+          </li>
+          <li>
+            <img
+              src="./assets/img/General/add-user.png"
+              alt="Icone inscription"
+            />
+            <a href="./SignUp.html">Inscription</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- <div class="banner-photo-profil">
+        <div class="photo">
+
+        </div>
+        <div class="banner">
+            
+        </div>
+    </div> -->
+    </header>
+    <main>
+      <!-- <div class="container-info-profil">
+        <div class="info-general">
+          <div class="general">
+            <h2>Général</h2>
+            <label for="firstname-user"
+                >Nom :
+                <input
+                  name="firstname-user"
+                  id="firstname-user"
+                  type="text"
+                  placeholder="généré backend"
+                />
+              </label>
+              <label for="secondname-user"
+                >Nom du tournoi :
+                <input
+                  name="secondname-user"
+                  id="secondname-user"
+                  type="text"
+                  required
+                />
+              </label>
+              <label for="nickname-user"
+                >Nom du tournoi :
+                <input
+                  name="nickname-user"
+                  id="nickname-user"
+                  type="text"
+                  required
+                />
+              </label>
+              <label for="country-user"
+                >Choix de la région :
+                <select name="country-user" id="country-user">
+                  <option value="" selected>--Choisissez un pays--</option>
+                  <option value="france">France</option>
+                  <option value="espagne">Espagne</option>
+                  <option value="angleterre">angleterre</option>
+                  <option value="allemagne">Allemagne</option>
+                  <option value="belgique">Belgique</option>
+                  <option value="suisse">Suisse</option>
+                </select>
+                <div class="container-cta">
+                    <button class="cta">Creer le tournois</button>
+                  </div>
+            
+
+          </div>
+          <div class="change-password">
+
+          </div>
+          <div class="change-mail">
+
+          </div>
+          <div class="delete-account">
+
+          </div>
+        </div>
+      </div> -->
 
 
-      </main>
-      <!-- <footer>
+
+      <!-- HISTORIQUE DES TOURNOIS -->
+      <div class="history-tournament-profil">
+                            <!-- carte tournois -->
+        <div class="card-tournament">
+          <div class="banner-card-tournament"></div>
+          <h4>
+            T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
+          </h4>
+          <div class="info-date-tournament">
+            <img
+              src="./assets/img/General/schedule.png"
+              alt="Icone calendrier"
+            />
+            <p>Tue dec 24</p>
+            <img src="./assets/img/General/clock.png" alt="Icone horloge" />
+            <p>19:00 AM CET</p>
+            <p>in 3 days</p>
+          </div>
+          <div class="divider-card"></div>
+          <h5>Région</h5>
+          <div class="divider-card"></div>
+          <h6>Nom de l'organisateur</h6>
+        </div>
+        <!-- fin carte tournoi -->
+        <!-- carte tournois -->
+        <div class="card-tournament">
+          <div class="banner-card-tournament"></div>
+          <h4>
+            T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
+          </h4>
+          <div class="info-date-tournament">
+            <img
+              src="./assets/img/General/schedule.png"
+              alt="Icone calendrier"
+            />
+            <p>Tue dec 24</p>
+            <img src="./assets/img/General/clock.png" alt="Icone horloge" />
+            <p>19:00 AM CET</p>
+            <p>in 3 days</p>
+          </div>
+          <div class="divider-card"></div>
+          <h5>Région</h5>
+          <div class="divider-card"></div>
+          <h6>Nom de l'organisateur</h6>
+        </div>
+        <!-- fin carte tournoi -->
+        <!-- carte tournois -->
+        <div class="card-tournament">
+          <div class="banner-card-tournament"></div>
+          <h4>
+            T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
+          </h4>
+          <div class="info-date-tournament">
+            <img
+              src="./assets/img/General/schedule.png"
+              alt="Icone calendrier"
+            />
+            <p>Tue dec 24</p>
+            <img src="./assets/img/General/clock.png" alt="Icone horloge" />
+            <p>19:00 AM CET</p>
+            <p>in 3 days</p>
+          </div>
+          <div class="divider-card"></div>
+          <h5>Région</h5>
+          <div class="divider-card"></div>
+          <h6>Nom de l'organisateur</h6>
+        </div>
+        <!-- fin carte tournoi -->
+        <!-- carte tournois -->
+        <div class="card-tournament">
+          <div class="banner-card-tournament"></div>
+          <h4>
+            T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
+          </h4>
+          <div class="info-date-tournament">
+            <img
+              src="./assets/img/General/schedule.png"
+              alt="Icone calendrier"
+            />
+            <p>Tue dec 24</p>
+            <img src="./assets/img/General/clock.png" alt="Icone horloge" />
+            <p>19:00 AM CET</p>
+            <p>in 3 days</p>
+          </div>
+          <div class="divider-card"></div>
+          <h5>Région</h5>
+          <div class="divider-card"></div>
+          <h6>Nom de l'organisateur</h6>
+        </div>
+        <!-- fin carte tournoi -->
+      </div>
+    </main>
+    <!-- <footer>
 
       </footer> -->
-    
-
 
     <script src="./assets/javascript/profilPrivate.js"></script>
     <script src="./assets/javascript/animationNavbar.js"></script>
-</body>
+  </body>
 </html>
