@@ -87,168 +87,264 @@
           </li>
         </ul>
       </nav>
-      <!-- <div class="banner-photo-profil">
-        <div class="photo">
-
+      <!-- PHOTO DE PROFIL ET BANNIERE QU ON PEUX CHANGER AU CLICK -->
+      <div class="container-banner-photo">
+        <div class="banner-photo-profil">
+          <div class="photo">
+            <img
+              id="photo-profil"
+              src="./assets/img/General/upload_64px.png"
+              alt="Photo de profil"
+            />
+            <input
+              type="file"
+              id="upload-photo"
+              name="upload-photo"
+              accept="images/*"
+            />
+          </div>
+          <div class="banner">
+            <img
+              id="banner-profil"
+              src="./assets/img/General/upload-banner-64px.png"
+              alt="Bannière de profil"
+            />
+            <input
+              type="file"
+              id="upload-banner"
+              name="upload-banner"
+              accept="images/*"
+            />
+          </div>
         </div>
-        <div class="banner">
-            
-        </div>
-    </div> -->
+      </div>
     </header>
+    <!-- DEBUT DU MAIN -->
     <main>
-      <!-- <div class="container-info-profil">
+      <!-- CONTAINER PRINCIPAL QUI CONTIENT GENERAL / CHANGEMENT DE MOT DE PASSE et D EMAIL / SUPRESSION DU COMPTE -->
+      <div class="container-info-profil">
         <div class="info-general">
-          <div class="general">
-            <h2>Général</h2>
-            <label for="firstname-user"
-                >Nom :
-                <input
-                  name="firstname-user"
-                  id="firstname-user"
-                  type="text"
-                  placeholder="généré backend"
-                />
-              </label>
-              <label for="secondname-user"
-                >Nom du tournoi :
-                <input
-                  name="secondname-user"
-                  id="secondname-user"
-                  type="text"
-                  required
-                />
-              </label>
-              <label for="nickname-user"
-                >Nom du tournoi :
-                <input
-                  name="nickname-user"
-                  id="nickname-user"
-                  type="text"
-                  required
-                />
-              </label>
-              <label for="country-user"
-                >Choix de la région :
-                <select name="country-user" id="country-user">
-                  <option value="" selected>--Choisissez un pays--</option>
-                  <option value="france">France</option>
-                  <option value="espagne">Espagne</option>
-                  <option value="angleterre">angleterre</option>
-                  <option value="allemagne">Allemagne</option>
-                  <option value="belgique">Belgique</option>
-                  <option value="suisse">Suisse</option>
-                </select>
-                <div class="container-cta">
-                    <button class="cta">Creer le tournois</button>
-                  </div>
-            
+          <!-- CONTAINER  GENERAL -->
 
+          <div class="general box-info">
+            <div class="title-container-profil">
+              <h2>Général</h2>
+              <img
+                src="./assets/img/General/arrow-down-sign-to-navigate.png"
+                alt="fleche pour ouvrir et fermer la fenetre des parametre"
+                class="dropdown-general dropdown"
+              />
+            </div>
+            <label for="firstname-user">Nom : </label>
+            <input name="firstname-user" id="firstname-user" type="text" />
+            <label for="secondname-user">Prénom : </label>
+            <input
+              name="secondname-user"
+              id="secondname-user"
+              type="text"
+              required
+            />
+            <label for="nickname-user">Pseudo : </label>
+            <input
+              name="nickname-user"
+              id="nickname-user"
+              type="text"
+              required
+            />
+            <label for="country-user">Pays : </label>
+            <select name="country-user" id="country-user">
+              <option value="" selected>--Choisissez un pays--</option>
+              <option value="france">France</option>
+              <option value="espagne">Espagne</option>
+              <option value="angleterre">angleterre</option>
+              <option value="allemagne">Allemagne</option>
+              <option value="belgique">Belgique</option>
+              <option value="suisse">Suisse</option>
+            </select>
+            <div class="container-cta">
+              <button class="cta">Mettre a jour</button>
+            </div>
           </div>
-          <div class="change-password">
 
+          <!-- CONTAINER CHANGE PASSWORD -->
+          <div class="change-password box-info">
+            <div class="title-container-profil">
+              <h2>Changement de mot de passe</h2>
+              <img
+                src="./assets/img/General/arrow-down-sign-to-navigate.png"
+                alt="fleche pour ouvrir et fermer la fenetre des parametre"
+                class="dropdown-change-password dropdown"
+              />
+            </div>
+            <label for="password-now">Mot de passe actuel : </label>
+            <input name="password-now" id="password-now" type="password" />
+            <label for="new-password">Nouveau mot de passe : </label>
+            <input
+              name="new-password"
+              id="new-password"
+              type="password"
+              required
+            />
+            <label for="again-password"
+              >Retapez votre nouveau mot de passe :
+            </label>
+            <input
+              name="again-password"
+              id="again-password"
+              type="password"
+              required
+            />
+            <div class="container-cta">
+              <button class="cta">Mettre a jour</button>
+            </div>
           </div>
-          <div class="change-mail">
 
+          <!-- CONTAINER CHANGE EMAIL -->
+          <div class="change-mail box-info">
+            <div class="title-container-profil">
+              <h2>Changement d'email</h2>
+              <img
+                src="./assets/img/General/arrow-down-sign-to-navigate.png"
+                alt="fleche pour ouvrir et fermer la fenetre des parametre"
+                class="dropdown-change-mail dropdown"
+              />
+            </div>
+            <label for="password-now-mail">Mot de passe actuel : </label>
+            <input name="password-now-mail" id="password-now-mail" type="password" />
+            <label for="new-mail">Nouvelle email : </label>
+            <input
+              name="new-mail"
+              id="new-mail"
+              type="text"
+              required
+            />
+            <div class="container-cta">
+              <button class="cta">Mettre a jour</button>
+            </div>
           </div>
-          <div class="delete-account">
 
+          <!-- CONTAINER DELETE ACCOUNT -->
+          <div class="delete-account box-info">
+            <div class="title-container-profil">
+              <h2>Supprimer mon compte</h2>
+              <img
+                src="./assets/img/General/arrow-down-sign-to-navigate.png"
+                alt="fleche pour ouvrir et fermer la fenetre des parametre"
+                class="dropdown-delete-account dropdown"
+              />
+            </div>
+            <label for="firstname-user">Mot de passe actuel : </label>
+            <input name="firstname-user" id="firstname-user" type="password" />
+            <div class="container-cta">
+              <button class="cta">Mettre a jour</button>
+            </div>
           </div>
         </div>
-      </div> -->
-
-
+      </div>
 
       <!-- HISTORIQUE DES TOURNOIS -->
-      <div class="history-tournament-profil">
-                            <!-- carte tournois -->
-        <div class="card-tournament">
-          <div class="banner-card-tournament"></div>
-          <h4>
-            T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
-          </h4>
-          <div class="info-date-tournament">
-            <img
-              src="./assets/img/General/schedule.png"
-              alt="Icone calendrier"
-            />
-            <p>Tue dec 24</p>
-            <img src="./assets/img/General/clock.png" alt="Icone horloge" />
-            <p>19:00 AM CET</p>
-            <p>in 3 days</p>
+      <div class="container-history">
+        <div class="history-tournament-profil">
+          <div class="container-card ">
+            <div class="title-container-profil">
+              <h2>Historique de mes tournois</h2>
+              <img
+                src="./assets/img/General/arrow-down-sign-to-navigate.png"
+                alt="fleche pour ouvrir et fermer la fenetre des parametre"
+                class="dropdown-info dropdown"
+              />
+            </div>
+            
+            <!-- carte tournois -->
+            <div class="card-tournament">
+              <div class="banner-card-tournament"></div>
+              <h4>
+                T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
+              </h4>
+              <div class="info-date-tournament">
+                <img
+                  src="./assets/img/General/schedule.png"
+                  alt="Icone calendrier"
+                />
+                <p>Tue dec 24</p>
+                <img src="./assets/img/General/clock.png" alt="Icone horloge" />
+                <p>19:00 AM CET</p>
+                <p>in 3 days</p>
+              </div>
+              <div class="divider-card"></div>
+              <h5>Région</h5>
+              <div class="divider-card"></div>
+              <h6>Nom de l'organisateur</h6>
+            </div>
+            <!-- fin carte tournoi -->
+            <!-- carte tournois -->
+            <div class="card-tournament">
+              <div class="banner-card-tournament"></div>
+              <h4>
+                T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
+              </h4>
+              <div class="info-date-tournament">
+                <img
+                  src="./assets/img/General/schedule.png"
+                  alt="Icone calendrier"
+                />
+                <p>Tue dec 24</p>
+                <img src="./assets/img/General/clock.png" alt="Icone horloge" />
+                <p>19:00 AM CET</p>
+                <p>in 3 days</p>
+              </div>
+              <div class="divider-card"></div>
+              <h5>Région</h5>
+              <div class="divider-card"></div>
+              <h6>Nom de l'organisateur</h6>
+            </div>
+            <!-- fin carte tournoi -->
+            <!-- carte tournois -->
+            <div class="card-tournament">
+              <div class="banner-card-tournament"></div>
+              <h4>
+                T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
+              </h4>
+              <div class="info-date-tournament">
+                <img
+                  src="./assets/img/General/schedule.png"
+                  alt="Icone calendrier"
+                />
+                <p>Tue dec 24</p>
+                <img src="./assets/img/General/clock.png" alt="Icone horloge" />
+                <p>19:00 AM CET</p>
+                <p>in 3 days</p>
+              </div>
+              <div class="divider-card"></div>
+              <h5>Région</h5>
+              <div class="divider-card"></div>
+              <h6>Nom de l'organisateur</h6>
+            </div>
+            <!-- fin carte tournoi -->
+            <!-- carte tournois -->
+            <div class="card-tournament">
+              <div class="banner-card-tournament"></div>
+              <h4>
+                T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
+              </h4>
+              <div class="info-date-tournament">
+                <img
+                  src="./assets/img/General/schedule.png"
+                  alt="Icone calendrier"
+                />
+                <p>Tue dec 24</p>
+                <img src="./assets/img/General/clock.png" alt="Icone horloge" />
+                <p>19:00 AM CET</p>
+                <p>in 3 days</p>
+              </div>
+              <div class="divider-card"></div>
+              <h5>Région</h5>
+              <div class="divider-card"></div>
+              <h6>Nom de l'organisateur</h6>
+            </div>
+            <!-- fin carte tournoi -->
           </div>
-          <div class="divider-card"></div>
-          <h5>Région</h5>
-          <div class="divider-card"></div>
-          <h6>Nom de l'organisateur</h6>
         </div>
-        <!-- fin carte tournoi -->
-        <!-- carte tournois -->
-        <div class="card-tournament">
-          <div class="banner-card-tournament"></div>
-          <h4>
-            T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
-          </h4>
-          <div class="info-date-tournament">
-            <img
-              src="./assets/img/General/schedule.png"
-              alt="Icone calendrier"
-            />
-            <p>Tue dec 24</p>
-            <img src="./assets/img/General/clock.png" alt="Icone horloge" />
-            <p>19:00 AM CET</p>
-            <p>in 3 days</p>
-          </div>
-          <div class="divider-card"></div>
-          <h5>Région</h5>
-          <div class="divider-card"></div>
-          <h6>Nom de l'organisateur</h6>
-        </div>
-        <!-- fin carte tournoi -->
-        <!-- carte tournois -->
-        <div class="card-tournament">
-          <div class="banner-card-tournament"></div>
-          <h4>
-            T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
-          </h4>
-          <div class="info-date-tournament">
-            <img
-              src="./assets/img/General/schedule.png"
-              alt="Icone calendrier"
-            />
-            <p>Tue dec 24</p>
-            <img src="./assets/img/General/clock.png" alt="Icone horloge" />
-            <p>19:00 AM CET</p>
-            <p>in 3 days</p>
-          </div>
-          <div class="divider-card"></div>
-          <h5>Région</h5>
-          <div class="divider-card"></div>
-          <h6>Nom de l'organisateur</h6>
-        </div>
-        <!-- fin carte tournoi -->
-        <!-- carte tournois -->
-        <div class="card-tournament">
-          <div class="banner-card-tournament"></div>
-          <h4>
-            T1 tournament | 16 teams | direct elimination | Cashprize 2500RP
-          </h4>
-          <div class="info-date-tournament">
-            <img
-              src="./assets/img/General/schedule.png"
-              alt="Icone calendrier"
-            />
-            <p>Tue dec 24</p>
-            <img src="./assets/img/General/clock.png" alt="Icone horloge" />
-            <p>19:00 AM CET</p>
-            <p>in 3 days</p>
-          </div>
-          <div class="divider-card"></div>
-          <h5>Région</h5>
-          <div class="divider-card"></div>
-          <h6>Nom de l'organisateur</h6>
-        </div>
-        <!-- fin carte tournoi -->
       </div>
     </main>
     <!-- <footer>
