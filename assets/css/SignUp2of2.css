@@ -26,7 +26,7 @@ body {
   max-width: 350px;
   height: 580px;
   margin: 6rem 1rem;
-  
+
   background-color: #28303f;
   box-shadow: 0 0 15px 0px rgba(158, 219, 52);
   border-radius: 15px;
@@ -52,7 +52,7 @@ form {
 .formSignUpTop {
   width: 75%;
 }
-.formSignUpTop input{
+.formSignUpTop input {
   height: 25px;
 }
 .formSignUpTop label + input {
@@ -97,7 +97,7 @@ form button:active {
   text-decoration: none;
 }
 
-.containerButton button a:visited{
+.containerButton button a:visited {
   text-decoration: none;
   color: rgb(158, 219, 52);
 }

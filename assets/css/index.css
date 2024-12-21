@@ -236,19 +236,17 @@ header {
   flex-wrap: wrap;
   justify-content: flex-end; */
 }
-form{
+form {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  
 }
 label {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end;
-  
 }
 select {
   width: 100%;
@@ -302,12 +300,11 @@ option:hover {
   box-shadow: 0 5px 25px 2px rgb(0, 0, 0, 85%);
   text-shadow: 1px 1px 5px rgb(14, 3, 3);
 }
-.card-tournament:hover{
+.card-tournament:hover {
   cursor: pointer;
   box-shadow: 0 0 20px 1px rgb(158, 219, 52, 0.1);
   transition: all 0.3s ease;
   transform: translateY(2px);
-  
 }
 .banner-card-tournament {
   width: 100%;
@@ -462,9 +459,8 @@ footer a {
     font-size: 2rem;
     line-height: 3.5rem;
   }
-  label{
+  label {
     width: 26.65%;
-
   }
   select {
     width: 100%;
@@ -588,7 +584,6 @@ footer a {
     width: 350px;
     height: 500px;
     margin: 25px 20px;
-    
   }
 
   .card-tournament h4 {

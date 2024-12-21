@@ -57,14 +57,14 @@ iconDropdownProfil.addEventListener("click", () => {
   boxGeneral.classList.toggle("hide-box");
 });
 iconChangePassword.addEventListener("click", () => {
-    boxChangePassword.classList.toggle("hide-box");
+  boxChangePassword.classList.toggle("hide-box");
 });
 iconChangeMail.addEventListener("click", () => {
-    boxChangeMail.classList.toggle("hide-box");
+  boxChangeMail.classList.toggle("hide-box");
 });
 iconDelete.addEventListener("click", () => {
-    boxDelete.classList.toggle("hide-box");
+  boxDelete.classList.toggle("hide-box");
 });
 iconHistoryProfil.addEventListener("click", () => {
-    boxHistoryProfil.classList.toggle("hide-box");
+  boxHistoryProfil.classList.toggle("hide-box");
 });
