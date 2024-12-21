@@ -22,6 +22,13 @@ h2{
   align-items: center;
   font-size: 18px;
 }
+footer{
+  margin-top: 80px;
+}
+/* CACHER LES BOX POUR LE MENU DEROULANT */
+.hide-box{
+  display: none!important;
+}
 
 
 /* PHOTO DE PROFIL */
@@ -130,15 +137,16 @@ option{
   border-bottom: 1px solid black;
   font-weight: 500;
   padding: 0 10px 0 10px;
-  margin-bottom: 10px;
+  
 }
 label{
+  margin-top: 10px;
   width: 90%;
 }
 input, select{
   width: 90%;
   height: 30px;
-  margin: 5px 0 15px;
+  margin: 5px 0 5px;
   color: black;
 }
 .container-cta {
@@ -200,6 +208,7 @@ input, select{
   background-color: #232f65;
   align-content: flex-start;
   border-radius: 10px;
+  text-shadow: 1px 1px 5px rgb(14, 3, 3);
   box-shadow: 0 5px 25px 2px rgb(0, 0, 0, 85%);
 }
 .card-tournament:hover {
@@ -233,6 +242,16 @@ input, select{
   font-weight: 500;
 
   font-size: 1.2rem;
+}
+.box-dropdown{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+.box-history-profil{
+  box-shadow: 0 0 15px rgb(0, 0, 0, 55%);  
 }
 .info-date-tournament {
   width: 90%;
@@ -333,6 +352,7 @@ input, select{
     width: 350px;
     height: 500px;
     margin: 25px 20px;
+    text-shadow: 1px 1px 5px rgb(14, 3, 3);
   }
 
   .card-tournament h4 {
