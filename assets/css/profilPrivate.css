@@ -17,21 +17,22 @@ main {
   flex-wrap: wrap;
   justify-content: flex-end;
 }
-h2 {
+h2{
   display: flex;
   align-items: center;
   font-size: 18px;
 }
-footer {
+footer{
   margin-top: 80px;
 }
 /* CACHER LES BOX POUR LE MENU DEROULANT */
-.hide-box {
-  display: none !important;
+.hide-box{
+  display: none!important;
 }
 
+
 /* PHOTO DE PROFIL */
-.container-banner-photo {
+.container-banner-photo{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -57,11 +58,13 @@ footer {
   position: relative;
   top: 20px;
 }
-.photo img {
+.photo img{
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  cursor: pointer;
 }
+
 
 .photo input {
   width: 100%;
@@ -77,37 +80,42 @@ footer {
   align-items: center;
   width: 100%;
   height: 160px;
+  
+  
 }
 #banner-profil {
   width: 90%;
   height: 100%;
   background-color: rgb(242, 242, 242, 0.1);
+  cursor: pointer;
+  
 }
 
-.banner input {
+.banner input{
   display: none;
 }
 
-/* ***********CONTAINER INFOS**********  */
-option {
+            /* ***********CONTAINER INFOS**********  */
+option{
   color: black;
 }
-.container-info-profil {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 80px;
+.container-info-profil{
+    width: 100%;
+    height: auto;    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
 }
-.info-general {
+.info-general{
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
-.box-info {
+.box-info{
   width: 100%;
   height: auto;
   display: flex;
@@ -115,28 +123,29 @@ option {
   justify-content: center;
   width: 100%;
   margin-bottom: 20px;
-  background-color: #232f65;
+  background-color: #232F65;
   border: 1px solid black;
-  box-shadow: 0 0 15px rgb(0, 0, 0, 55%);
+  box-shadow: 0 0 15px rgb(0, 0, 0, 55%);  
+    
 }
-.title-container-profil {
+.title-container-profil{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 40px;
   font-size: 18px;
-  background-color: #28303f;
+  background-color: #28303F;
   border-bottom: 1px solid black;
   font-weight: 500;
   padding: 0 10px 0 10px;
+  
 }
-label {
+label{
   margin-top: 10px;
   width: 90%;
 }
-input,
-select {
+input, select{
   width: 90%;
   height: 30px;
   margin: 5px 0 5px;
@@ -144,7 +153,7 @@ select {
 }
 .container-cta {
   width: 100%;
-
+  
   display: flex;
   justify-content: center;
 }
@@ -166,10 +175,10 @@ select {
   box-shadow: 0 0 10px 2px rgb(158, 219, 52);
 }
 
-/* ****FIN DE CONTAINER INFO******* */
+           /* ****FIN DE CONTAINER INFO******* */
 
 /* DEBUT HISTORIQUE TOURNOIS */
-.container-history {
+.container-history{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -179,15 +188,15 @@ select {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-
+  
   width: 100%;
 }
-.container-card {
+.container-card{
   width: 90%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  background-color: #232f65;
+  background-color: #232F65;
 }
 /* CARD TOURNAMENT */
 
@@ -236,14 +245,15 @@ select {
 
   font-size: 1.2rem;
 }
-.box-dropdown {
+.box-dropdown{
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+
 }
-.box-history-profil {
-  box-shadow: 0 0 15px rgb(0, 0, 0, 55%);
+.box-history-profil{
+  box-shadow: 0 0 15px rgb(0, 0, 0, 55%);  
 }
 .info-date-tournament {
   width: 90%;
@@ -273,65 +283,77 @@ select {
 }
 
 @media (min-width: 768px) {
-  .banner-photo-profil {
+  .banner-photo-profil{
     width: 80%;
   }
-  .banner img {
+  .photo{
+    width: 150px;
+    height: 150px;
+  }
+  .banner {
+    height: 260px;
+  }
+  .banner img{
     max-width: 750px;
   }
 
-  .container-history {
+  .container-history{
     width: 80%;
+    
   }
   .history-tournament-profil {
     width: 100%;
     max-width: 1300px;
+    
   }
-  .container-info-profil {
+  .container-info-profil{
     width: 80%;
   }
-  .dropdown {
+  .dropdown{
     display: none;
   }
-  .info-general {
+  .info-general{
     width: 100%;
     max-width: 1300px;
   }
-  .container-general {
+  .container-general{
     width: 100%;
   }
-  .container-card {
+  .container-card{
     width: 94%;
     justify-content: center;
   }
-  .box-info {
+  .box-info{
     width: 46%;
     margin: 1%;
   }
 }
 @media (min-width: 1024px) {
-  .banner-photo-profil {
+  .banner-photo-profil{
     width: 85%;
   }
 
-  .container-history {
+  .container-history{
+    width: 85%;
+    
+  }
+
+  .container-info-profil{
     width: 85%;
   }
 
-  .container-info-profil {
-    width: 85%;
-  }
 }
 @media (min-width: 1300px) {
+
   .photo {
+
     width: 158px;
     height: 158px;
   }
-  .banner {
-    height: 260px;
-  }
+
 }
 @media (min-width: 1595px) {
+
   /* CARD TOURNAMENT */
   .card-tournament {
     width: 350px;
