@@ -52,7 +52,7 @@ form {
 .hide-info {
   display: none;
 }
-/* CONTAINER DES PARAMETRES DE LA CREATION DE TOURNOIS réutilisable pour les autres container*/
+/* CONTAINER DES PARAMETRES INFORMATION GENERAL ET INFORMATION DU JEU*/
 .responsiv-param {
   width: 100%;
   height: auto;
@@ -60,6 +60,7 @@ form {
   flex-wrap: wrap;
   justify-content: center;
 }
+
 .container-parameter-form {
   width: 90%;
   height: auto;
@@ -93,7 +94,7 @@ form {
   padding: 20px 0;
 }
 
-/* FIN DU CONTAINER DES PARAMETRE DE LA CREATION DE TOURNOIS */
+
 
 /* ELEMENT DU CONTAINER INFORMATION GENERAL */
 
@@ -220,6 +221,7 @@ p {
   }
   form {
     width: 85%;
+    max-width: 1150PX;
   }
 
   .container-parameter-form {
