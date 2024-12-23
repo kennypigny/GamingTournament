@@ -40,6 +40,11 @@ footer {
   align-self: flex-end;
   margin-top: 50px;
 }
+.container-form{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
 /* form 100% sinon quand  display:none sur les box casse la mise en page du formulaire*/
 form {
   width: 100%;
@@ -211,7 +216,7 @@ p {
     display: flex;
     justify-content: flex-start;
     margin: 0;
-    width: 81%;
+    width: 79%;
     max-width: none;
     
     padding: 50px 0;
@@ -219,9 +224,11 @@ p {
   .dropdown {
     display: none;
   }
-  form {
+  .container-form{
     width: 85%;
-    max-width: 1150PX;
+  }
+  form {
+    width: 80%;
   }
 
   .container-parameter-form {
@@ -245,12 +252,14 @@ p {
     width: 45%;
     margin-left: 15px;
   }
+  form {
+    width: 85%;
+    max-width: 1050px;
+  }
 }
 
 @media (min-width: 1595px) {
-  form {
-    max-width: 2000px;
-  }
+ 
 }
 
 /* 
