@@ -56,7 +56,7 @@
               src="../assets/img/General/crown.png"
               alt="Icone creation de tournoi"
             />
-            <a href="./assets/css/createTournament.css">Créer tournois</a>
+            <a href="./createTournament.html">Créer tournois</a>
           </li>
           <li>
             <img
@@ -103,15 +103,15 @@
       </div>
     </header>
     <main>
-      <h1>Feuille du tournoi : <br><em>*Nom du tournoi*</em></h1>
+      <h1>Feuille du tournoi : <br /><em>*Nom du tournoi*</em></h1>
       <div class="main-container-tournament-sheet">
         <div class="info-general-tournament-sheet">
-          <div class="title-sheet-tournament">
+          <div class="title-sheet-tournament dropdown-info-sheet-tournament">
             <h2>Information générale</h2>
             <img
               src="../assets/img/General/arrow-down-sign-to-navigate.png"
               alt="fleche pour ouvrir et fermer la fenetre des parametre"
-              class="dropdown"
+              class="dropdown "
             />
           </div>
           <div class="container-info-description">
@@ -133,6 +133,8 @@
                     <p>Eu West</p>
                     <h3>Date :</h3>
                     <p>20 / 12 / 2024</p>
+                    <h3>Discord :</h3>
+                    <p>https://discord.gg/QJmFR7Fg</p>
                   </div>
                   <div class="container-right">
                     <h3>Plateforme :</h3>
@@ -141,18 +143,16 @@
                     <p>Privée</p>
                     <h3>Heure</h3>
                     <p>09:00 PM CET</p>
+                    <h3>Nb de joueurs</h3>
+                    <p>
+                      <span id="sub-players">1</span> /
+                      <span id="total-players">16</span>
+                    </p>
                   </div>
                 </div>
-                <h3>Discord :</h3>
-                <p>https://discord.gg/QJmFR7Fg</p>
-                <h3>Nb de joueurs</h3>
-                <p>
-                  <span id="sub-players">1</span> /
-                  <span id="total-players">16</span>
-                </p>
               </div>
             </div>
-            <div class="divider-sheet-tournament"></div>
+            <div class="divider-sheet-tournament-first"></div>
             <div class="description-tournament">
               <h3>Description</h3>
               <p>
@@ -190,12 +190,12 @@
       </div>
       <div class="main-container-structure">
         <div class="container-structure-tournament">
-          <div class="title-sheet-tournament">
+          <div class="title-sheet-tournament dropdown-structure-tournament">
             <h2>Structure du tournoi</h2>
             <img
               src="../assets/img/General/arrow-down-sign-to-navigate.png"
               alt="fleche pour ouvrir et fermer la fenetre des parametre"
-              class="dropdown"
+              class="dropdown "
             />
           </div>
           <div class="structure-tournament">
@@ -211,4 +211,41 @@
     <script src="../assets/javascript/tournamentSheet.js"></script>
     <script src="../assets/javascript/animationNavbar.js"></script>
   </body>
+  <!-- DEBUT FOOTER -->
+  <footer>
+    <div class="container-footer">
+      <div class="contact">
+        <h3>Contactez-nous</h3>
+        <div class="divider-footer"></div>
+        <p>Adresse Postale: 21 rue des geek 75001 Paris</p>
+        <p>Email : Admin-gt@gaming-tournament.com</p>
+        <p>Téléphone : 01.51.52.41.42. 43</p>
+        <a
+          href="https://www.legalstart.fr/fiches-pratiques/proteger-une-creation/mentions-legales/"
+          target="_blank"
+          class="block"
+          >Mention-légales</a
+        >
+        <a
+          href="https://www.legalstart.fr/fiches-pratiques/relations-commerciales/politique-confidentialite/"
+          target="_blank"
+          class="block"
+          >Politique de confidentialité</a
+        >
+        <a href="https://www.facebook.com/?locale=fr_FR" target="_blank">
+          <img src="../assets/img/General/facebook.png" alt="Icone facebook"
+        /></a>
+        <a href="https://www.instagram.com" target="_blank">
+          <img src="../assets/img/General/instagram.png" alt="Icone instagram"
+        /></a>
+        <a href="https://x.com/?lang=fr" target="_blank">
+          <img src="../assets/img/General/twitter.png" alt="Icone twitter"
+        /></a>
+      </div>
+
+      <div class="copyright">
+        <p>© 2024 GamingTournament, Incorporation. Tous droit réservés</p>
+      </div>
+    </div>
+  </footer>
 </html>
