@@ -166,7 +166,7 @@
     font-size: 1rem;
   }
   .navbar-side {
-    width: 15%;
+    width: 20%;
   }
 }
 @media (min-width: 1300px) {
@@ -175,6 +175,9 @@
   }
   .logo-side-navbar {
     height: 150px;
+  }
+  .navbar-side {
+    width: 15%;
   }
 }
 @media (min-width: 1595px) {

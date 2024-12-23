@@ -11,7 +11,7 @@
 }
 body {
   height: 110vh;
-  width: 100vw;
+  width: 100%;
   color: #f2f2f2;
   background-image: url("../img/General/rue-sombre-asphalte-mouille-reflets-rayons-dans-eau_129911-2318.webp");
   background-size: cover;
