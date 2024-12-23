@@ -10,7 +10,7 @@
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
   color: #f2f2f2;
-  text-shadow: 0 0 10px rgb(0, 0, 0);}
+}
 body {
   background-color: #151b27;
   min-height: 100vh;
@@ -22,9 +22,8 @@ h1 {
   width: 90%;
   max-width: 400px;
   padding: 110px 0 40px;
-  font-weight: 400;
-  font-size: 21px;
   margin: 0 auto;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 main {
   width: 100%;
@@ -35,12 +34,13 @@ main {
 h2,
 h3 {
   font-size: 1.5rem;
+  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 footer {
   align-self: flex-end;
   margin-top: 50px;
 }
-.container-form{
+.container-form {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -58,6 +58,9 @@ form {
   display: none;
 }
 /* CONTAINER DES PARAMETRES INFORMATION GENERAL ET INFORMATION DU JEU*/
+label {
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
 .responsiv-param {
   width: 100%;
   height: auto;
@@ -98,8 +101,6 @@ form {
   height: auto;
   padding: 20px 0;
 }
-
-
 
 /* ELEMENT DU CONTAINER INFORMATION GENERAL */
 
@@ -218,13 +219,13 @@ p {
     margin: 0;
     width: 79%;
     max-width: none;
-    
+
     padding: 50px 0;
   }
   .dropdown {
     display: none;
   }
-  .container-form{
+  .container-form {
     width: 85%;
   }
   form {
@@ -259,7 +260,6 @@ p {
 }
 
 @media (min-width: 1595px) {
- 
 }
 
 /* 
