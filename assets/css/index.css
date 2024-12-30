@@ -233,9 +233,6 @@ header {
 .container-selectbox {
   width: 100%;
   height: auto;
-  /* display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end; */
 }
 form {
   width: 100%;
