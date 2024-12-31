@@ -34,6 +34,9 @@ h1 {
 img {
   cursor: pointer;
 }
+button{
+  cursor: pointer;
+}
 .green{
   color: #50B649;
 }
@@ -190,16 +193,20 @@ h4 {
   border-radius: 25px;
   color: rgb(158, 219, 52);
   background-color: #001c61;
-  box-shadow: 0 0 10px rgb(158, 219, 52, 0.8);
+  box-shadow: 0 0 10px rgb(158, 219, 52, 0.6);
   transition: all 0.3s ease, box-shadow 0.3s ease;
   border: none;
 }
 .cta a {
+  width: 100%;
   text-decoration: none;
 }
 .cta:active {
   transform: translateY(1px);
   box-shadow: 0 0 10px 2px rgb(158, 219, 52);
+}
+.cta:hover{
+  box-shadow: 0 0 10px rgb(158, 219, 52, 1);
 }
 
 /* CONTAINER DE LA SECTION PARTICIPANT ET INSCRIPTION */
@@ -270,9 +277,9 @@ span {
   width: 80px;
   height: 20px;
   border-radius: 20px;
-  color: rgb(158, 219, 52);
+  color: #f2f2f2;
   background-color: #001c61;
-  box-shadow: 0 0 10px rgb(158, 219, 52, 0.8);
+  box-shadow: 0 0 10px rgb(158, 219, 52, 0.6);
   transition: all 0.3s ease, box-shadow 0.3s ease;
   border: none;
   margin-right: 10px;
@@ -283,6 +290,9 @@ span {
 .add:active {
   transform: translateY(1px);
   box-shadow: 0 0 10px 2px rgb(158, 219, 52);
+}
+.add:hover{
+  box-shadow: 0 0 10px rgb(158, 219, 52, 1);
 }
 
 /* tableau des joueurs inscrit */
