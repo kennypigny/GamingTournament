@@ -127,7 +127,7 @@
                     <h3>Date :</h3>
                     <p>20 / 12 / 2024</p>
                     <h3>Discord :</h3>
-                    <p>https://discord.gg/QJmFR7Fg</p>
+                    <p class="discord">https://discord.gg/QJmFR7Fg</p>
                   </div>
                   <div class="container-right">
                     <h3>Plateforme :</h3>
@@ -183,11 +183,251 @@
             </div>
           </div>
         </div>
+        <!-- CONTAINER DE LA SECTION PARTICIPANT ET INSCRIPTION  -->
+        <div class="tournament-management">
+          <!-- BOX PLAYERS -->
+          <div class="players">
+            <div class="title-sheet-tournament dropdown-players-tournament">
+              <h2>Joueurs</h2>
+              <img
+                src="../assets/img/General/arrow-down-sign-to-navigate.png"
+                alt="fleche pour ouvrir et fermer la fenetre des parametre"
+                class="dropdown"
+              />
+            </div>
+            <div class="top-box-players">
+              <div class="number-tournament">
+                <span id="number-of-players">5</span>
+                <p>Joueurs</p>
+              </div>
+              <div class="number-tournament">
+                <span id="size-of-tournament">16</span>
+                <p>Taille du tournoi</p>
+              </div>
+            </div>
+            <div class="bottom-box-players">
+              <div class="title-bottom-box">
+                <h3>Liste des joueurs</h3>
+                <button class="add"><a href="">+ Ajouter</a></button>
+              </div>
+              <!-- tableau des joueurs inscrit  -->
+              <table class="table-players">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Pseudo</th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><input type="checkbox" name="player1" /></td>
+                    <td>Joueur 1</td>
+                    <td>
+                      <img
+                        src="../assets/img/General/crayon.png"
+                        alt="Icone modifier"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="player2" /></td>
+                    <td>Joueur 2</td>
+                    <td>
+                      <img
+                        src="../assets/img/General/crayon.png"
+                        alt="Icone modifier"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="player3" /></td>
+                    <td>Joueur 3</td>
+                    <td>
+                      <img
+                        src="../assets/img/General/crayon.png"
+                        alt="Icone modifier"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="player4" /></td>
+                    <td>Joueur 4</td>
+                    <td>
+                      <img
+                        src="../assets/img/General/crayon.png"
+                        alt="Icone modifier"
+                      />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><input type="checkbox" name="player5" /></td>
+                    <td>Joueur 5</td>
+                    <td>
+                      <img
+                        src="../assets/img/General/crayon.png"
+                        alt="Icone modifier"
+                      />
+                    </td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <img
+                        src="../assets/img/General/poubelle.png"
+                        alt="Icone modifier"
+                      />
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+          </div>
+          <!-- BOX REGISTRATION -->
+          <div class="registration">
+            <div
+              class="title-sheet-tournament dropdown-registration-tournament"
+            >
+              <h2>Inscriptions</h2>
+              <img
+                src="../assets/img/General/arrow-down-sign-to-navigate.png"
+                alt="fleche pour ouvrir et fermer la fenetre des parametre"
+                class="dropdown"
+              />
+            </div>
+            <div class="top-box-registration">
+              <div class="number-registration">
+                <span class="blue" id="number-waiting">5</span>
+                <p class="blue">En attente</p>
+              </div>
+              <div class="number-registration">
+                <span class="red" id="number-refused">0</span>
+                <p class="red">Refusés</p>
+              </div>
+              <div class="number-registration">
+                <span class="green" id="number-accept">5</span>
+                <p class="green">Acceptés</p>
+              </div>
+              <div class="number-registration">
+                <span class="orange" id="number-canceled">2</span>
+                <p class="orange">Annulés</p>
+              </div>
+            </div>
+            <div class="bottom-box-registration">
+              <div class="title-bottom-box">
+                <h3>Inscription en attente</h3>
+              </div>
+              <!-- tableau des joueurs en attente de validation  -->
+              <table class="table-registration">
+                <thead>
+                  <tr>
+                    <th>Pseudo</th>
+                    <th class="green">A</th>
+                    <th class="red">R</b></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Joueur 6</td>
+                    <td><input type="radio" id="registration-accepted-player1"
+                      name="registration1" /></td>
+                    <td>
+                      <input type="radio" id="registration-canceled-player1"
+                      name="registration1" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Joueur 7</td>
+                    <td><input type="radio" id="registration-accepted-player2"
+                      name="registration2" /></td>
+                    <td>
+                      <input type="radio" id="registration-canceled-player2"
+                      name="registration2" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Joueur 8</td>
+                    <td><input type="radio" id="registration-accepted-player3" name="registration3"/></td>
+                    <td>
+                      <input type="radio" id="registration-canceled-player3" name="registration3" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Joueur 9</td>
+                    <td><input type="radio" id="registration-accepted-player4" name="registration4"  /></td>
+                    <td>
+                      <input type="radio" id="registration-canceled-player4" name="registration4" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Joueur 10</td>
+                    <td><label for=""></label><input type="radio" id="registration-accepted-player5" name="registration5"/></td>
+                    <td>
+                      <input type="radio" id="registration-canceled-player5" name="registration5"/>
+                    </td>
+                  </tr>
+                  
+                </tbody>
+                <tfoot>
+                  <tr>
+                    <td></td>
+                    <td></td>
+                    <td>
+                      <button class="add"><a href="">Valider</a></button>
+                    </td>
+                  </tr>
+                </tfoot>
+              </table>
+              
+            </div>
+            <div class="auto-accept">
+              <p>Accepter automatiquement les inscriptions</p>
+              <label for="auto-accept-yes"><input type="radio" id="auto-accept-yes" name="auto-accept"/> Oui</label>
+              <label for="auto-accept-no"><input type="radio" id="auto-accept-no" name="auto-accept"/> Non</label>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
-    <!-- <footer>
+    <footer>
+      <div class="container-footer">
+        <div class="contact">
+          <h3>Contactez-nous</h3>
+          <div class="divider-footer"></div>
+          <p>Adresse Postale: 21 rue des geek 75001 Paris</p>
+          <p>Email : Admin-gt@gaming-tournament.com</p>
+          <p>Téléphone : 01.51.52.41.42. 43</p>
+          <a
+            href="https://www.legalstart.fr/fiches-pratiques/proteger-une-creation/mentions-legales/"
+            target="_blank"
+            class="block"
+            >Mention-légales</a
+          >
+          <a
+            href="https://www.legalstart.fr/fiches-pratiques/relations-commerciales/politique-confidentialite/"
+            target="_blank"
+            class="block"
+            >Politique de confidentialité</a
+          >
+          <a href="https://www.facebook.com/?locale=fr_FR" target="_blank">
+            <img src="../assets/img/General/facebook.png" alt="Icone facebook"
+          /></a>
+          <a href="https://www.instagram.com" target="_blank">
+            <img src="../assets/img/General/instagram.png" alt="Icone instagram"
+          /></a>
+          <a href="https://x.com/?lang=fr" target="_blank">
+            <img src="../assets/img/General/twitter.png" alt="Icone twitter"
+          /></a>
+        </div>
 
-      </footer> -->
+        <div class="copyright">
+          <p>© 2024 GamingTournament, Incorporation. Tous droit réservés</p>
+        </div>
+      </div>
+    </footer>
 
     <script src="../assets/javascript/animationNavbar.js"></script>
     <script src="../assets/javascript/tournamentManagement.js"></script>
