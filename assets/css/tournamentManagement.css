@@ -44,7 +44,7 @@ button{
   color: #DD0606;
 }
 .orange{
-  color: #E96512;
+  color: #f19155;
 }
 .blue{
   color: #33B1FF;
@@ -55,9 +55,11 @@ button{
 }
 
 /* TOGGLE MENU DEROULANT  */
-.active-sheet-tournament {
-  display: none;
+.active-tournament-management {
+  display: none!important;
 }
+
+
 .main-container-tournament-management {
   width: 100%;
   display: flex;
@@ -225,7 +227,7 @@ span {
   background-color: #232f65;
   border: 1px solid black;
   box-shadow: 0 0 15px rgb(0, 0, 0, 55%);
-  padding-bottom: 40px;
+  
 }
 
 /* BOX TOP players */
@@ -257,7 +259,7 @@ span {
 /* BOX BOTTOM */
 .bottom-box-players {
   width: 90%;
-  margin: auto;
+  margin:  0 auto 40px;
   padding-bottom: 30px;
   border: 1px solid black;
   box-shadow: 0 0 15px rgb(0, 0, 0, 45%);
@@ -341,7 +343,7 @@ input {
   background-color: #232f65;
   border: 1px solid black;
   box-shadow: 0 0 15px rgb(0, 0, 0, 55%);
-  padding-bottom: 40px;
+  
 }
 /* BOX TOP registration*/
 .number-registration {
@@ -434,7 +436,7 @@ input {
 /* AUTO ACCEPT */
 .auto-accept{
   width: 90%;
-  margin: 30px auto 0;
+  margin: 30px auto 40px;
 }
 .auto-accept p{
   margin-bottom: 10px;
