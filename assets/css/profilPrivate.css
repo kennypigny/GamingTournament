@@ -151,6 +151,7 @@ input, select{
   margin: 5px 0 5px;
   color: black;
 }
+
 .container-cta {
   width: 100%;
   
@@ -174,6 +175,18 @@ input, select{
   transform: translateY(1px);
   box-shadow: 0 0 10px 2px rgb(158, 219, 52);
 }
+
+/* MESSAGE D ERREUR VERIFICATION REGEX */
+.message-error{
+  display: none;
+  font-size: 12px;
+  color: red;
+
+}
+.message-error-visible{
+  display: block;
+}
+
 
            /* ****FIN DE CONTAINER INFO******* */
 

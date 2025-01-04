@@ -25,10 +25,13 @@
         <div class="formSignUpTop">
           <label for="passwordSignUp">Mot de passe :</label>
           <input
+            class="password-character-requiered"
             type="password"
             name="passwordSignUp"
             id="passwordSignUp"
             placeholder="**********"
+            minlength="8"
+            maxlength="24"
             required
           />
           <label for="confirmPasswordSignUp">Confirmez mot de passe :</label>
