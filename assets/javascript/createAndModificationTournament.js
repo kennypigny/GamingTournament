@@ -1,3 +1,5 @@
+
+// MENU DROPDOWN MOBILE
 const iconDropdown = document.querySelector(".dropdown-info");
 const infoGeneral = document.getElementById("info-general");
 
@@ -16,3 +18,12 @@ iconDropdownGame.addEventListener("click", () => {
 iconDropdownStructure.addEventListener("click", () => {
   infoStructure.classList.toggle("hide-info");
 });
+
+// AUTO-SELECT RADIO JOUEUR OU EQUIPES BOX-INFORMATION DU JEU
+
+document.getElementById('players').checked = true;
+
+// AUTO-SELECT RADIO PUBLIC OU PRIVEE BOX-STRUCTURE DU TOURNOI
+
+document.getElementById('public').checked = true;
+document.getElementById('auto-sub-on').checked = true;

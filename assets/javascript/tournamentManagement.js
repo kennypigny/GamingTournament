@@ -1,3 +1,4 @@
+// MENU DROPDOWN MOBILE
 const dropDownInfo = document.querySelector(".dropdown-info-sheet-tournament");
 const infoGeneral = document.querySelector(".container-info-description");
 
@@ -19,3 +20,6 @@ dropDownPlayers.addEventListener("click", () => {
 dropDownRegistration.addEventListener("click", () => {
   registration.classList.toggle("active-tournament-management");
 });
+
+// AUTO-SELECT-RADIO auto-accept box-registration
+document.getElementById('auto-accept-yes').checked = true;

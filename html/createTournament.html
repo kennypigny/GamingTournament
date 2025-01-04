@@ -119,7 +119,7 @@
               <div class="general" id="info-general">
                 <label for="name-tournament"
                   >Nom du tournoi :
-                  <input                  
+                  <input
                     name="name-tournament"
                     id="name-tournament"
                     type="text"
@@ -166,7 +166,7 @@
               <div class="general" id="info-game">
                 <label for="games-select"
                   >Choix du jeu :
-                  <select name="games-select" id="games-select">
+                  <select name="games-select" id="games-select" required>
                     <option value="" selected>--Choisissez un jeu--</option>
                     <option value="lol">League of legend</option>
                     <option value="fifa">Fifa</option>
@@ -177,7 +177,7 @@
                 </label>
                 <label for="region-select"
                   >Choix de la région :
-                  <select name="region-select" id="region-select">
+                  <select name="region-select" id="region-select" required>
                     <option value="" selected>--Choisissez une region--</option>
                     <option value="europe">Europe</option>
                     <option value="asie">Asie</option>
@@ -187,7 +187,11 @@
                 </label>
                 <label for="plateform-select"
                   >Choix de la plateforme :
-                  <select name="palteform-select" id="plateform-select">
+                  <select
+                    name="palteform-select"
+                    id="plateform-select"
+                    required
+                  >
                     <option value="" selected>
                       --Choisissez une plateforme--
                     </option>
@@ -201,7 +205,7 @@
                 <div class="size-player">
                   <label for="size"
                     >Taille :
-                    <input name="size" id="size" type="text" />
+                    <input name="size" id="size" type="text" required />
                   </label>
                   <label for="players">
                     Joueurs
