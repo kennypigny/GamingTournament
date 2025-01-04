@@ -38,4 +38,3 @@ buttonGeneral.addEventListener("click", () =>
   verificationOnlyLetter(nickName, letterErrorNickname)
 );
 
-// VERIFICATION MDP

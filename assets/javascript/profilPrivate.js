@@ -170,7 +170,7 @@ function verifyNewEmail() {
   } else {
     NewEmailError.classList.remove("message-error-visible");
 
-    alert("EMAIL VALIDE !");
+    // alert("EMAIL VALIDE !");
   }
 }
 

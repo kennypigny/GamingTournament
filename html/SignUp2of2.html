@@ -34,6 +34,10 @@
             maxlength="24"
             required
           />
+          <p class="message-error password-error">
+            Le mot de passe doit contenir au moins 8 caractères, une
+            majuscule, une minuscule, un chiffre et un caractère spécial.
+          </p>
           <label for="confirmPasswordSignUp">Confirmez mot de passe :</label>
           <input
             type="password"
@@ -42,14 +46,20 @@
             placeholder="**********"
             required
           />
+          <p class="message-error password-error-confirm">
+            Le mot de passe ne correspond pas.
+          </p>
           <label for="mailSignUp">Adresse Email :</label>
           <input
-            type="password"
+            type="email"
             name="mailSignUp"
             id="mailSignUp"
             placeholder="ex : Adresse-Email@gmail.com"
             required
           />
+          <p class="message-error email-error">
+            Entrer une adresse email valide.
+          </p>
         </div>
         <div class="containerCheckBox">
           <input type="checkbox" id="conditions" name="conditions" required />
@@ -67,7 +77,7 @@
         </div>
 
         <div class="containerButton">
-          <button>S'inscrire</button>
+          <button id="button-submit-signUp">S'inscrire</button>
         </div>
 
         <p>2 / 2</p>
@@ -75,5 +85,7 @@
         <div class="dividerSignUp"></div>
       </form>
     </div>
+
+    <script src="../assets/javascript/signUp2of2.js"></script>
   </body>
 </html>
