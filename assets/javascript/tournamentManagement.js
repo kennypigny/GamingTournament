@@ -67,7 +67,7 @@ tbody.addEventListener("click", function modificationOfNickname(event) {
 
     nicknameCell.innerHTML = `
       <input type="text" value="${currentNickname}" class="edit-nickname" />
-      <button class="save-btn add">Ok</button>
+      <button class="save-btn">Add</button>
     `;
 
     // Selectionne les nouveaux élements
@@ -102,3 +102,17 @@ function closeEditWindows() {
     parentCell.textContent = currentName;
   });
 }
+
+// Supprimer des joueurs du tournoi
+
+const deleteIcon = document.querySelector(".table-players tfoot img");
+
+deleteIcon.addEventListener("click", function deletePlayers()  {
+
+  const checkboxes = tbody.querySelectorAll("input[type='checkbox']:checked"); 
+
+  checkboxes.forEach((checkbox) => {
+    const playersToDelete = checkbox.closest("tr"); 
+    playersToDelete.remove(); 
+  });
+});
