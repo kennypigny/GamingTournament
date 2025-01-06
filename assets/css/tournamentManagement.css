@@ -7,12 +7,13 @@
   padding: 0;
   font-family: "Roboto Condensed", sans-serif;
   font-optical-sizing: auto;
-  color: #f2f2f2;
+  
   text-shadow: 0 0 10px rgb(0, 0, 0, 0.6);
 }
 body {
   background-color: #151b27;
   width: 100%;
+  color: #f2f2f2;
 }
 main {
   width: 100%;
@@ -53,6 +54,7 @@ button{
   overflow-x: auto; /* Scroll horizontal */
 
 }
+
 
 /* TOGGLE MENU DEROULANT  */
 .active-tournament-management {
@@ -202,10 +204,12 @@ h4 {
 .cta a {
   width: 100%;
   text-decoration: none;
+  color: #f2f2f2;
 }
 .cta:active {
   transform: translateY(1px);
   box-shadow: 0 0 10px 2px rgb(158, 219, 52);
+  
 }
 .cta:hover{
   box-shadow: 0 0 10px rgb(158, 219, 52, 1);
@@ -297,7 +301,8 @@ span {
   box-shadow: 0 0 10px rgb(158, 219, 52, 1);
 }
 
-/* tableau des joueurs inscrit */
+/* TTABLEAU DES JOUEURS INSCRIT */
+   
 .table-players {
   width: 90%;
   margin: auto;
@@ -306,7 +311,9 @@ span {
 }
 .table-players tr {
   width: 100%;
+  height: 40px;
 }
+
 input {
   width: 20px;
   height: 20px;
@@ -319,8 +326,13 @@ input {
   font-size: 18px;
 }
 .table-players tr td {
-  padding: 15px 0;
   font-size: 18px;
+  border-bottom: 1px solid #f2f2f2;
+}
+.table-players tr td:nth-child(1) input{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 .table-players tr th:nth-child(1) {
   width: 20%;
@@ -331,11 +343,16 @@ input {
 .table-players tr th:nth-child(3) {
   width: 20%;
 }
-.table-players tr td {
-  border-bottom: 1px solid #f2f2f2;
-}
+
 .table-players tr td img {
   width: 20px;
+  height: 20px;
+}
+ /* style de la fenetre edit */
+ .edit-nickname{
+  width: 50%;
+  height: 24px;
+  margin-right: 10%;
 }
 /* BOX REGISTRATION */
 .registration {

@@ -217,7 +217,7 @@
               <div class="bottom-box-players">
                 <div class="title-bottom-box">
                   <h3>Liste des joueurs</h3>
-                  <button class="add">Ajouter</button>
+                  <button id="add-player" class="add">Ajouter</button>
                 </div>
                 <!-- tableau des joueurs inscrit  -->
                 <table class="table-players">
@@ -229,7 +229,7 @@
                     </tr>
                   </thead>
                   <tbody>
-                    <tr>
+                    <!-- <tr>
                       <td>
                         <label for="list-player1" aria-label="Joueur inscrit"
                           ><input
@@ -245,75 +245,7 @@
                           alt="Icone modifier"
                         />
                       </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="list-player2" aria-label="Joueur inscrit"
-                          ><input
-                            type="checkbox"
-                            name="list-player2"
-                            id="list-player2"
-                        /></label>
-                      </td>
-                      <td>Joueur 2</td>
-                      <td>
-                        <img
-                          src="../assets/img/General/crayon.png"
-                          alt="Icone modifier"
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="list-player3" aria-label="Joueur inscrit"
-                          ><input
-                            type="checkbox"
-                            name="list-player3"
-                            id="list-player3"
-                        /></label>
-                      </td>
-                      <td>Joueur 3</td>
-                      <td>
-                        <img
-                          src="../assets/img/General/crayon.png"
-                          alt="Icone modifier"
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="list-player4" aria-label="Joueur inscrit"
-                          ><input
-                            type="checkbox"
-                            name="list-player4"
-                            id="list-player4"
-                        /></label>
-                      </td>
-                      <td>Joueur 4</td>
-                      <td>
-                        <img
-                          src="../assets/img/General/crayon.png"
-                          alt="Icone modifier"
-                        />
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <label for="list-player5" aria-label="Joueur inscrit"
-                          ><input
-                            type="checkbox"
-                            name="list-player5"
-                            id="list-player5"
-                        /></label>
-                      </td>
-                      <td>Joueur 5</td>
-                      <td>
-                        <img
-                          src="../assets/img/General/crayon.png"
-                          alt="Icone modifier"
-                        />
-                      </td>
-                    </tr>
+                    </tr> -->
                   </tbody>
                   <tfoot>
                     <tr>
@@ -322,7 +254,7 @@
                       <td>
                         <img
                           src="../assets/img/General/poubelle.png"
-                          alt="Icone modifier"
+                          alt="Icone supprimer"
                         />
                       </td>
                     </tr>
@@ -344,186 +276,190 @@
               />
             </div>
             <div class="container-registration">
-            <div class="top-box-registration">
-              <div class="number-registration">
-                <span class="blue" id="number-waiting">5</span>
-                <p class="blue">En attente</p>
+              <div class="top-box-registration">
+                <div class="number-registration">
+                  <span class="blue" id="number-waiting">5</span>
+                  <p class="blue">En attente</p>
+                </div>
+                <div class="number-registration">
+                  <span class="red" id="number-refused">0</span>
+                  <p class="red">Refusés</p>
+                </div>
+                <div class="number-registration">
+                  <span class="green" id="number-accept">5</span>
+                  <p class="green">Acceptés</p>
+                </div>
+                <div class="number-registration">
+                  <span class="orange" id="number-canceled">2</span>
+                  <p class="orange">Annulés</p>
+                </div>
               </div>
-              <div class="number-registration">
-                <span class="red" id="number-refused">0</span>
-                <p class="red">Refusés</p>
-              </div>
-              <div class="number-registration">
-                <span class="green" id="number-accept">5</span>
-                <p class="green">Acceptés</p>
-              </div>
-              <div class="number-registration">
-                <span class="orange" id="number-canceled">2</span>
-                <p class="orange">Annulés</p>
-              </div>
-            </div>
-            <div class="bottom-box-registration">
-              <div class="title-bottom-box">
-                <h3>Inscription en attente</h3>
-              </div>
-              <!-- tableau des joueurs en attente de validation  -->
-              <table class="table-registration">
-                <thead>
-                  <tr>
-                    <th>Pseudo</th>
-                    <th class="green">A</th>
-                    <th class="red">R</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Joueur 6</td>
-                    <td>
-                      <label
-                        for="registration-accepted1"
-                        aria-label="Accepter l'inscription"
-                      >
+              <div class="bottom-box-registration">
+                <div class="title-bottom-box">
+                  <h3>Inscription en attente</h3>
+                </div>
+                <!-- tableau des joueurs en attente de validation  -->
+                <table class="table-registration">
+                  <thead>
+                    <tr>
+                      <th>Pseudo</th>
+                      <th class="green">A</th>
+                      <th class="red">R</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Joueur 6</td>
+                      <td>
+                        <label
+                          for="registration-accepted1"
+                          aria-label="Accepter l'inscription"
+                        >
+                          <input
+                            type="radio"
+                            id="registration-accepted1"
+                            name="registration1"
+                        /></label>
+                      </td>
+                      <td>
+                        <label
+                          for="registration-canceled1"
+                          aria-label="Refuser l'inscription"
+                        ></label>
                         <input
                           type="radio"
-                          id="registration-accepted1"
+                          id="registration-canceled1"
                           name="registration1"
-                      /></label>
-                    </td>
-                    <td>
-                      <label
-                        for="registration-canceled1"
-                        aria-label="Refuser l'inscription"
-                      ></label>
-                      <input
-                        type="radio"
-                        id="registration-canceled1"
-                        name="registration1"
-                      />
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Joueur 7</td>
-                    <td>
-                      <label
-                        for="registration-accepted2"
-                        aria-label="Accepter l'inscription"
-                      >
-                        <input
-                          type="radio"
-                          id="registration-accepted2"
-                          name="registration2"
-                      /></label>
-                    </td>
-                    <td>
-                      <label
-                        for="registration-canceled2"
-                        aria-label="Refuser l'inscription"
-                      >
-                        <input
-                          type="radio"
-                          id="registration-canceled2"
-                          name="registration2"
-                      /></label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Joueur 8</td>
-                    <td>
-                      <label
-                        for="registration-accepted3"
-                        aria-label="Accepter l'inscription"
-                      >
-                        <input
-                          type="radio"
-                          id="registration-accepted3"
-                          name="registration3"
-                      /></label>
-                    </td>
-                    <td>
-                      <label
-                        for="registration-canceled3"
-                        aria-label="Refuser l'inscription"
-                      >
-                        <input
-                          type="radio"
-                          id="registration-canceled3"
-                          name="registration3"
-                      /></label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Joueur 9</td>
-                    <td>
-                      <label
-                        for="registration-accepted4"
-                        aria-label="Accepter l'inscription"
-                      >
-                        <input
-                          type="radio"
-                          id="registration-accepted4"
-                          name="registration4"
-                      /></label>
-                    </td>
-                    <td>
-                      <label
-                        for="registration-canceled4"
-                        aria-label="Refuser l'inscription"
-                      >
-                        <input
-                          type="radio"
-                          id="registration-canceled4"
-                          name="registration4"
-                      /></label>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Joueur 10</td>
-                    <td>
-                      <label
-                        for="registration-accepted5"
-                        aria-label="Accepter l'inscription"
-                        ><input
-                          type="radio"
-                          id="registration-accepted5"
-                          name="registration5"
-                      /></label>
-                    </td>
-                    <td>
-                      <label
-                        for="registration-canceled5"
-                        aria-label="Refuser l'inscription"
-                      >
-                        <input
-                          type="radio"
-                          id="registration-canceled5"
-                          name="registration5"
-                      /></label>
-                    </td>
-                  </tr>
-                </tbody>
-                <tfoot>
-                  <tr>
-                    <td></td>
-                    <td></td>
-                    <td>
-                      <button class="add">Valider</button>
-                    </td>
-                  </tr>
-                </tfoot>
-              </table>
+                        />
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Joueur 7</td>
+                      <td>
+                        <label
+                          for="registration-accepted2"
+                          aria-label="Accepter l'inscription"
+                        >
+                          <input
+                            type="radio"
+                            id="registration-accepted2"
+                            name="registration2"
+                        /></label>
+                      </td>
+                      <td>
+                        <label
+                          for="registration-canceled2"
+                          aria-label="Refuser l'inscription"
+                        >
+                          <input
+                            type="radio"
+                            id="registration-canceled2"
+                            name="registration2"
+                        /></label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Joueur 8</td>
+                      <td>
+                        <label
+                          for="registration-accepted3"
+                          aria-label="Accepter l'inscription"
+                        >
+                          <input
+                            type="radio"
+                            id="registration-accepted3"
+                            name="registration3"
+                        /></label>
+                      </td>
+                      <td>
+                        <label
+                          for="registration-canceled3"
+                          aria-label="Refuser l'inscription"
+                        >
+                          <input
+                            type="radio"
+                            id="registration-canceled3"
+                            name="registration3"
+                        /></label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Joueur 9</td>
+                      <td>
+                        <label
+                          for="registration-accepted4"
+                          aria-label="Accepter l'inscription"
+                        >
+                          <input
+                            type="radio"
+                            id="registration-accepted4"
+                            name="registration4"
+                        /></label>
+                      </td>
+                      <td>
+                        <label
+                          for="registration-canceled4"
+                          aria-label="Refuser l'inscription"
+                        >
+                          <input
+                            type="radio"
+                            id="registration-canceled4"
+                            name="registration4"
+                        /></label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Joueur 10</td>
+                      <td>
+                        <label
+                          for="registration-accepted5"
+                          aria-label="Accepter l'inscription"
+                          ><input
+                            type="radio"
+                            id="registration-accepted5"
+                            name="registration5"
+                        /></label>
+                      </td>
+                      <td>
+                        <label
+                          for="registration-canceled5"
+                          aria-label="Refuser l'inscription"
+                        >
+                          <input
+                            type="radio"
+                            id="registration-canceled5"
+                            name="registration5"
+                        /></label>
+                      </td>
+                    </tr>
+                  </tbody>
+                  <tfoot>
+                    <tr>
+                      <td></td>
+                      <td></td>
+                      <td>
+                        <button class="add">Valider</button>
+                      </td>
+                    </tr>
+                  </tfoot>
+                </table>
+              </div>
+              <div class="auto-accept">
+                <p>Accepter automatiquement les inscriptions</p>
+                <label for="auto-accept-yes"
+                  ><input
+                    type="radio"
+                    id="auto-accept-yes"
+                    name="auto-accept"
+                  />
+                  Oui</label
+                >
+                <label for="auto-accept-no"
+                  ><input type="radio" id="auto-accept-no" name="auto-accept" />
+                  Non</label
+                >
+              </div>
             </div>
-            <div class="auto-accept">
-              <p>Accepter automatiquement les inscriptions</p>
-              <label for="auto-accept-yes"
-                ><input type="radio" id="auto-accept-yes" name="auto-accept" />
-                Oui</label
-              >
-              <label for="auto-accept-no"
-                ><input type="radio" id="auto-accept-no" name="auto-accept" />
-                Non</label
-              >
-            </div>
-          </div>
           </div>
         </div>
       </div>
