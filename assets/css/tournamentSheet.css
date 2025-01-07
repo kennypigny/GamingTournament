@@ -327,6 +327,10 @@ footer a {
   .container-list-sub-desktop {
     padding: 5rem 0 0 3rem;
   }
+  .container-structure-tournament {
+    max-width: 1024px;
+    
+  }
 }
 /*
 @media (min-width: 768px) {
