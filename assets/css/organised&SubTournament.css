@@ -78,17 +78,17 @@ h1 {
   border-radius: 10px;
 }
 
-.card-tournament h4 {
+.card-tournament h2 {
   width: 90%;
   font-size: 1.2rem;
   margin: 15px 5px;
 }
-.card-tournament h5 {
+.card-tournament h3 {
   margin-left: 10px;
   font-weight: 400;
   font-size: 1rem;
 }
-.card-tournament h6 {
+.card-tournament h4 {
   margin-left: 10px;
   font-weight: 500;
 

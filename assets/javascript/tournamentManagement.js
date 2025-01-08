@@ -42,7 +42,7 @@ addButton.addEventListener("click", () => {
                 <input type="checkbox" name="list-player${playerCount}" id="list-player${playerCount}" />
             </label>
         </td>
-        <td>Joueur ${playerCount}</td>
+        <td data-type="nickname">Joueur ${playerCount}</td>
         <td>
             <img src="../assets/img/General/crayon.png" alt="Icone modifier" />
         </td>
@@ -56,7 +56,7 @@ addButton.addEventListener("click", () => {
 
 tbody.addEventListener("click", function modificationOfNickname(event) {
   
-  if (event.target.tagName === "IMG") {
+  if (event.target.tagName === "IMG" || event.target.dataset.type === "nickname") {
     
     const rowParent = event.target.closest("tr"); 
     const nicknameCell = rowParent.querySelector("td:nth-child(2)");
@@ -70,10 +70,13 @@ tbody.addEventListener("click", function modificationOfNickname(event) {
       <button class="save-btn">Add</button>
     `;
 
+    
+
     // Selectionne les nouveaux élements
     const inputEdit = nicknameCell.querySelector(".edit-nickname");
     const saveButton = nicknameCell.querySelector(".save-btn");
-    
+    inputEdit.focus();
+
     const saveEdition = () => {
       const newName = inputEdit.value.trim();
       if (newName) {

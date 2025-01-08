@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const svg = document.querySelector(".tournament-lines");
     const rounds = document.querySelectorAll(".container-tree-tournament > div");
   
-    // Réinitialisation du contenu SVG
+    // Réinitialisation du contenu SVG (evite de superposé si le contenu est exécuté plusieur fois)
     svg.innerHTML = "";
   
     rounds.forEach((round, index) => {
