@@ -130,7 +130,7 @@ footer {
   border-radius: 25px;
   color: rgb(158, 219, 52);
   background-color: #001c61;
-  box-shadow: 0 0 20px 2px rgb(158, 219, 52);
+  box-shadow: 0 0 20px 2px rgb(158, 219, 52, 0.4);
   transition: all 0.3s ease;
   border: none;
 }
@@ -144,8 +144,12 @@ footer {
 }
 
 .cta:active {
-  transform: translateY(1px);
+  transform: translateY(3px);
   box-shadow: 0 0 10px 2px rgb(158, 219, 52);
+}
+.cta:hover{
+  box-shadow: 0 0 20px 2px rgb(158, 219, 52);
+
 }
 
 /* SELECTBOX  */
@@ -225,7 +229,7 @@ option:hover {
   cursor: pointer;
   box-shadow: 0 0 20px 1px rgb(158, 219, 52, 0.1);
   transition: all 0.3s ease;
-  transform: translateY(2px);
+  transform: translateY(5px);
 }
 .banner-card-tournament {
   width: 100%;

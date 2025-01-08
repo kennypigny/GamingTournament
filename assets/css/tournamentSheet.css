@@ -125,6 +125,7 @@ h4 {
 .description-tournament {
   width: 90%;
   margin: auto;
+  padding-bottom: 40px;
 }
 .description-tournament p {
   width: 90%;
@@ -305,6 +306,9 @@ footer a {
   }
 }
 @media (min-width: 1300px) {
+  h4 {
+    font-size: 1.5rem;
+  }
   .container-list-sub-desktop {
     width: 15%;
     left: 85%;

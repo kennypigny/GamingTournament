@@ -184,12 +184,12 @@ p {
 }
 
 /* BUTTON */
-.container-cta {
+.container-button-create {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-.cta {
+.button-create {
   font-size: 1.2rem;
   width: 250px;
   height: 50px;
@@ -200,9 +200,10 @@ p {
   box-shadow: 0 0 20px rgb(158, 219, 52);
   transition: all 0.3s ease, box-shadow 0.3s ease;
   border: none;
+  cursor: pointer;
 }
 
-.cta:active {
+.button-create:active {
   transform: translateY(1px);
   box-shadow: 0 0 10px 2px rgb(158, 219, 52);
 }

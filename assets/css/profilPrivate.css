@@ -158,13 +158,13 @@ input, select{
   color: black;
 }
 
-.container-cta {
+.container-button-update {
   width: 100%;
   
   display: flex;
   justify-content: center;
 }
-.cta {
+.button-update {
   font-size: 1rem;
   width: 200px;
   height: 25px;
@@ -177,7 +177,7 @@ input, select{
   border: none;
 }
 
-.cta:active {
+.button-update:active {
   transform: translateY(1px);
   box-shadow: 0 0 10px 2px rgb(158, 219, 52);
 }
