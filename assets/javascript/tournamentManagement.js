@@ -61,7 +61,7 @@ tbody.addEventListener("click", function modificationOfNickname(event) {
     const rowParent = event.target.closest("tr"); 
     const nicknameCell = rowParent.querySelector("td:nth-child(2)");
 
-    closeEditWindows();
+    closeEditNicknameWindows();
 
     const currentNickname = nicknameCell.textContent.trim();
 
@@ -96,7 +96,7 @@ tbody.addEventListener("click", function modificationOfNickname(event) {
 });
 
 // Fonction pour fermer les fenetres d'édition quand une autre s'ouvre
-function closeEditWindows() {
+function closeEditNicknameWindows() {
   const openInputs = tbody.querySelectorAll(".edit-nickname");
   
   openInputs.forEach((input) => {
@@ -117,5 +117,49 @@ deleteIcon.addEventListener("click", function deletePlayers()  {
   checkboxes.forEach((checkbox) => {
     const playersToDelete = checkbox.closest("tr"); 
     playersToDelete.remove(); 
+  });
+});
+
+
+// MODIFIER LE SCORE DES EQUIPES
+
+document.addEventListener("DOMContentLoaded", () => {
+  const tournamentCells = document.querySelectorAll(".cell-tournament");
+
+  tournamentCells.forEach((cell) => {
+    cell.addEventListener("click", () => {
+      const resultSpan = cell.querySelector(".cell-result");
+
+      
+      if (cell.querySelector("input")) return;
+
+      
+      const currentScore = resultSpan.textContent.trim();
+
+      
+      const input = document.createElement("input");
+      input.value = currentScore;
+      input.style.width = "100%";
+      input.style.height = "100%";
+      input.style.textAlign = "center";
+
+      
+      resultSpan.textContent = ""; 
+      resultSpan.appendChild(input);
+
+      input.focus();
+      
+      const saveScore = () => {
+        const newScore = input.value.trim() || "0"; 
+        resultSpan.textContent = newScore; 
+      };
+
+      input.addEventListener("blur", saveScore);
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter") {
+          saveScore();
+        }
+      });
+    });
   });
 });

@@ -16,6 +16,7 @@ body {
   min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
+  text-shadow: 1px 1px 10px rgb(0, 0, 0);
 }
 
 h1 {
@@ -23,7 +24,6 @@ h1 {
   max-width: 400px;
   padding: 110px 0 40px;
   margin: 0 auto;
-  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 main {
   width: 100%;
@@ -34,7 +34,6 @@ main {
 h2,
 h3 {
   font-size: 1.5rem;
-  text-shadow: 0 0 10px rgb(0, 0, 0);
 }
 footer {
   align-self: flex-end;
@@ -59,7 +58,7 @@ form {
 }
 /* CONTAINER DES PARAMETRES INFORMATION GENERAL ET INFORMATION DU JEU*/
 label {
-  text-shadow: 1px 1px 10px rgb(0, 0, 0);
+  
 }
 .responsiv-param {
   width: 100%;

@@ -26,4 +26,4 @@ document.getElementById('players').checked = true;
 // AUTO-SELECT RADIO PUBLIC OU PRIVEE BOX-STRUCTURE DU TOURNOI
 
 document.getElementById('public').checked = true;
-document.getElementById('auto-sub-on').checked = true;
+document.getElementById('auto-sub-off').checked = true;
