@@ -158,7 +158,7 @@
     display: block;
   }
   .navbar-side ul li img {
-    margin-left: 10px;
+    margin-left: 15px;
   }
 }
 @media (min-width: 1024px) {
@@ -188,7 +188,7 @@
     font-size: 1.3rem;
   }
   .navbar-side ul li img {
-    margin-left: 10px;
+    margin-left: 20px;
   }
   .logo-side-navbar {
     height: 150px;
