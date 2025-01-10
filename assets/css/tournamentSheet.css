@@ -168,7 +168,7 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto 150px;
+  margin: 0 auto 50px;
 }
 .container-structure-tournament {
   width: 100%;
@@ -228,6 +228,32 @@ footer a {
   text-align: center;
 }
 
+/* BUTTON SUBMIT REGISTER */
+.container-button-register {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.register-submit {
+  font-size: 1.2rem;
+  width: 250px;
+  height: 50px;
+  margin: 30px 0 100px;
+  border-radius: 25px;
+  color: rgb(158, 219, 52);
+  background-color: #001c61;
+  box-shadow: 0 0 20px rgb(158, 219, 52, 0.4);
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+.register-submit:active {
+  transform: translateY(5px);
+  
+}
+.register-submit:hover{
+  box-shadow: 0 0 20px rgb(158, 219, 52);
+}
 @media (min-width: 768px) {
   .dropdown {
     display: none;
@@ -333,7 +359,6 @@ footer a {
   }
   .container-structure-tournament {
     max-width: 1024px;
-    
   }
 }
 /*
