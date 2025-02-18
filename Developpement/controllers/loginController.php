@@ -1,0 +1,2 @@
+<?php
+render('Login', false);

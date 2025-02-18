@@ -1,0 +1,3 @@
+ RewriteEngine ON
+ RewriteRule ^assets/ - [L]
+ RewriteRule ^(.*)$ router.php [L,QSA]

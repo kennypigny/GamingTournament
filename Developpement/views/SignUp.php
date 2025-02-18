@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inscrivez-vous ! 1 / 2</title>
+    <!-- font ROBOTO CONDENSED -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!----------------------------------- -->
+    <link rel="stylesheet" href="./assets/css/SignUp.css" />
+  </head>
+  <body>
+    <div class="containerSignUp">
+      <img
+        src="./assets/img/General/gamingTournamentSignUp450x305.webp"
+        alt="Logo"
+      />
+
+      <form action="" method="">
+        <div class="formSignUpTop">
+          <label for="nickname-user"
+            >Pseudo :<span class="infoPseudo"
+              >*Sera visible par les autres utilisateur</span>
+            </label>
+          <input
+            type="text"
+            name="nickname-user"
+            id="nickname-user"
+            placeholder="Pseudo"
+            required
+          />
+          <p class="message-error letter-error-nickname">
+            Uniquement les caractères a-z et A-Z
+          </p>
+          <label for="firstname-user">Nom :</label>
+          <input
+            type="text"
+            name="firstname-user"
+            id="firstname-user"
+            placeholder="Nom"
+            required
+          />
+          <p class="message-error letter-error-firstname">
+            Le Uniquement les caractères a-z et A-Z
+          </p>
+          <label for="secondname-user">Prénom :</label>
+          <input
+            type="text"
+            name="secondname-user"
+            id="secondname-user"
+            placeholder="Prénom"
+            required
+          />
+          <p class="message-error letter-error-secondname">
+            Le Uniquement les caractères a-z et A-Z
+          </p>
+        </div>
+        <div class="containerButton">
+          <button id="button-general"><a href="./SignUp2of2.html">Suivant</a></button>
+        </div>
+
+        <p>1 / 2</p>
+
+        <div class="dividerSignUp"></div>
+      </form>
+    </div>
+
+    <script src="./assets/javascript/signUp.js"></script>
+  </body>
+</html>
