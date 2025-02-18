@@ -25,7 +25,7 @@
       <?php render('navbar', true); ?>      <!-- AJout de la navbar -->
     </header>
     <main>
-      <h1>Création d'un tournoi :</h1>
+      <h1>Création d'un tournoi </h1>
       <!-- enctype="multipart/form-data" pour l'envoie d'image de la banniere(backend) -->
       <div class="container-form">
         <form action="" enctype="multipart/form-data">
